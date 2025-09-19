@@ -22,24 +22,24 @@ You can download these files with the commands below. Note that the database fil
 # Download the UniProt mapping file
 wget https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
 
-# Download the latest ChEMBL SQLite database (e.g., version 34)
-wget https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_34_sqlite.tar.gz
+# Download the latest ChEMBL SQLite database (e.g., version 35)
+wget https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_35_sqlite.tar.gz
 
 # Unpack the database file
-tar -zxvf chembl_34_sqlite.tar.gz
+tar -zxvf chembl_35_sqlite.tar.gz
 ```
-This will create a directory named `chembl_34` containing the database file `chembl_34.db`.
+This will create a directory named `chembl_35` containing the database file `chembl_35.db`.
 
 ## Usage
 Run the script from the command line, providing the UniProt ID you wish to query. The paths to the ChEMBL database and UniProt mapping file can be provided on the command line. Alternatively, the default paths can be modified by editing the `DEFAULT_DB_FILENAME` and `DEFAULT_MAPPING_FILENAME` variables in the `assay_data_from_uniprot.py` script.
 
 ```bash
-python assay_data_from_uniprot.py <UNIPROT_ID> --db /path/to/chembl_34/chembl_34.db --mapping /path/to/chembl_uniprot_mapping.txt
+python assay_data_from_uniprot.py <UNIPROT_ID> --db /path/to/chembl_35/chembl_35.db --mapping /path/to/chembl_uniprot_mapping.txt
 ```
 
 ### Example
 ```bash
-python assay_data_from_uniprot.py P08183 --db chembl_34/chembl_34.db --mapping chembl_uniprot_mapping.txt
+python assay_data_from_uniprot.py P08183 --db chembl_35/chembl_35.db --mapping chembl_uniprot_mapping.txt
 ```
 The script will generate a CSV file named after the UniProt ID (e.g., `P08183.csv`).
 
