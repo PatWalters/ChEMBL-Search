@@ -16,7 +16,7 @@ This script requires two files from the ChEMBL database FTP site.
 *   **ChEMBL SQLite Database:** The complete database in SQLite format.
 *   **UniProt to ChEMBL Mapping File:** A tab-separated file mapping UniProt accession numbers to ChEMBL target IDs.
 
-You can download these files with the commands below. Note that the database file is approximately 3GB.
+You can download these files with the commands below. Note that the database file is approximately 5GB.
 
 ```bash
 # Download the UniProt mapping file
